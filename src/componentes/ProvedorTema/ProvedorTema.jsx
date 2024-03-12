@@ -36,8 +36,10 @@ const tema = {
     fontFamily: "'Montserrat', sans-serif"
 }
 
-export const ProvedorTema = ({children}) => {
+const ProvedorTema = ({children}) => {
     return <ThemeProvider theme={tema}>
         {children}
     </ThemeProvider>
 }
+
+export default ProvedorTema;

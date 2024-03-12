@@ -14,10 +14,12 @@ const estilos = tema =>{
     }
 }
 
-export const Estilos = () =>{
+const Estilos = () =>{
     return(
         <Global 
             styles={estilos}
         />
     )
 }
+
+export default Estilos;

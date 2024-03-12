@@ -5,7 +5,7 @@ import twiter from '../../img/Ícones/Ícones redes sociais/Twiter.svg'
 import Twitch from '../../img/Ícones/Ícones redes sociais/Twitch.svg'
 import whatsapp from '../../img/Ícones/Ícones redes sociais/Whatsapp.svg'
 
-export const Rodape = ()=>{
+const Rodape = ()=>{
     return(
         <RodapeEstilizado>
             <div>
@@ -25,3 +25,5 @@ export const Rodape = ()=>{
         </RodapeEstilizado>
     )
 }
+
+export default  Rodape; 
