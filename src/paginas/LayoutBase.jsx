@@ -1,12 +1,15 @@
 import { Outlet } from "react-router-dom/dist";
 import { Cabecalho } from "../componentes/Cabecalho/Cabecalho";
 import Rodape from '../componentes/Rodape/Rodape'
+import { Container } from "react-grid-system";
 
 const LayoutBase = () => {
     return (
         <>
             <Cabecalho />
-            <Outlet />
+            <Container>
+                <Outlet />  
+            </Container>
             <Rodape />
         </>
     )
