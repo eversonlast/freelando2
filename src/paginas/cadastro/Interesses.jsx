@@ -5,7 +5,6 @@ import { useState } from "react";
 import { Col, Row } from "react-grid-system";
 import {BotaoEstilizado} from "../../componentes/Botao/BotaoEstilizado"
 import { Link } from "react-router-dom";
-//estou fazendo
 
 const opcoes = [
     {
@@ -46,9 +45,11 @@ const Interesses = () =>{
         </Tipografia>
         <Row>
             <Col lg={6} md={6} sm={6}>
-                <BotaoEstilizado variante="secundaria">
-                    Anterior
-                </BotaoEstilizado>
+                <Link to="/cadastro">
+                    <BotaoEstilizado variante="secundaria">
+                        Anterior
+                    </BotaoEstilizado>                
+                </Link>
             </Col>
             <Col lg={6} md={6} sm={6}>
                 <div style={{textAlign: 'right'}}>
