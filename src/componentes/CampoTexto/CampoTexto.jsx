@@ -24,11 +24,15 @@ const LabelEstilizada = styled.label`
     line-height: 17px;
 `
 
-export const CampoTexto  = ({label})=>{
+export const CampoTexto  = ({label, valor, onChange, tipo="text" })=>{
     return(
         <LabelEstilizada >
             {label}
-            <InputEstilizado />
+            <InputEstilizado 
+                value={valor} 
+                onChange={evento => onChange(evento.target.value)} 
+                type={tipo}
+            />
         </LabelEstilizada>
     )
 }

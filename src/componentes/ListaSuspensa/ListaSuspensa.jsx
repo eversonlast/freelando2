@@ -117,7 +117,8 @@ export const ListaSuspensa = ({titulo, opcoes})=>{
         <BotaoEstilizado 
         estaAberta={estaAberta}
         onClick={()=>alternarVisibilidade(!estaAberta)}
-        onKeyDown={manipularTeclaDoTeclado}>
+        onKeyDown={manipularTeclaDoTeclado}
+        type="button">
             <div>
                 {opcaoSelecionada ? opcaoSelecionada.text: 'Selecione'}
             </div>
